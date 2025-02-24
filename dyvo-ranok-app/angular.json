@@ -18,7 +18,6 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/dyvo-ranok-app",
-            "baseHref": "/DYVO-RANOK/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
