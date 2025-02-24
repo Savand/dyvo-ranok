@@ -22,14 +22,18 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          cd dyvo-ranok-app
+          npm install
 
       - name: Build Angular App
-        run: npm run build -- --configuration production --output-path=dist
+        run: |
+          cd dyvo-ranok-app
+          npm run build -- --configuration production --output-path=dist
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: dyvo-ranok/dist/dyvo-ranok-app
 
