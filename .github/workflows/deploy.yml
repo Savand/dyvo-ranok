@@ -31,6 +31,10 @@ jobs:
           cd dyvo-ranok-app
           npm run build -- --configuration production --output-path=dist
 
+      - name: Add CNAME file
+        run: |
+          echo "www.dyvo-ranok.com.ua" > DYVO-RANOK/dist/dyvo-ranok-app/CNAME
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
