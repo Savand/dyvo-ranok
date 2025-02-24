@@ -33,7 +33,7 @@ jobs:
 
       - name: Add CNAME file
         run: |
-          echo "www.dyvo-ranok.com.ua" > DYVO-RANOK/dist/dyvo-ranok-app/CNAME
+          echo "www.dyvo-ranok.com.ua" > dyvo-ranok-app/dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
