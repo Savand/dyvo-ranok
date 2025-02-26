@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './test-dir.component.scss'
 })
 export class TestDirComponent {
+  title = "My courses"
   items = ["item1","item2","item3"]
 }
