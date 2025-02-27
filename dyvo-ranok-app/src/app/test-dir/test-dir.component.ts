@@ -10,7 +10,7 @@ import { TestDirService } from '../test-dir.service';
   providers: [TestDirService]
 })
 export class TestDirComponent {
-  title = "My courses"
+  title = "Варіанти постільної білизни будуть тут"
   items!: string[];
 
   constructor(service: TestDirService) {
