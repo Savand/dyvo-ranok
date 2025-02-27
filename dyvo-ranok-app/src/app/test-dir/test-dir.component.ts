@@ -16,4 +16,9 @@ export class TestDirComponent {
   constructor(service: TestDirService) {
     this.items = service.getItems();
   }
+
+  doAfterOnClick(_$event:MouseEvent) {
+    _$event.stopPropagation;
+    console.log('button clicked', _$event);
+  }
 }
