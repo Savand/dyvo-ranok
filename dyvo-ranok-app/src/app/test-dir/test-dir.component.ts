@@ -10,8 +10,9 @@ import { TestDirService } from '../test-dir.service';
   providers: [TestDirService]
 })
 export class TestDirComponent {
-  title = "Варіанти постільної білизни будуть тут"
-  items!: string[];
+
+  title = "Варіанти постільної білизни"
+  items: string[];
 
   constructor(service: TestDirService) {
     this.items = service.getItems();
@@ -21,4 +22,5 @@ export class TestDirComponent {
     _$event.stopPropagation;
     console.log('button clicked', _$event);
   }
+
 }

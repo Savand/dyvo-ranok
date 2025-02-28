@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class TestDirService {
 
   getItems(): string[] {
-    return ["item1", "item2","item3"]
+    return ["Одинарна", "Двоспальна","Євро"]
   }
 
 }

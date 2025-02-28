@@ -5,7 +5,8 @@
 
 // Variable overrides second
 $primary: #78b3ce;
-$secondary: #c9e6f0;
+$secondary: #C1A1D3;
+// $secondary: #c9e6f0;
 $body-bg: #fbf8ef;
 $body-secondary-bg: #C1A1D3;
 // $font-family-base: 'Source Sans Pro', 'Lucida Grande', sans-serif;
@@ -24,12 +25,5 @@ $font-family-base: "Shantell Sans", cursive;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-  padding: 10px;
-  color: #4a4a4a;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 20px;  // Для великих екранів
-  }
+    color: #4a4a4a;
 }
