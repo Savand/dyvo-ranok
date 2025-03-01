@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestDirComponent } from './test-dir.component';
+import { MmBodyComponent } from './mm-body.component';
 
-describe('TestDirComponent', () => {
-  let component: TestDirComponent;
-  let fixture: ComponentFixture<TestDirComponent>;
+describe('MmBodyComponent', () => {
+  let component: MmBodyComponent;
+  let fixture: ComponentFixture<MmBodyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TestDirComponent]
+      imports: [MmBodyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TestDirComponent);
+    fixture = TestBed.createComponent(MmBodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
