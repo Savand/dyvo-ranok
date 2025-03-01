@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   providers: [SellItemsService],
 })
 export class SellItemComponent {
-  items: object;
+  items: object[];
 
   constructor(private service: SellItemsService) {
     this.items = this.service.getItems();
