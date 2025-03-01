@@ -1,26 +1,12 @@
 import { Component } from '@angular/core';
-import { TestDirService } from '../test-dir.service';
-import { NgFor } from '@angular/common';
+import { SellItemComponent } from './sell-item/sell-item.component';
 
 @Component({
   selector: 'app-mm-body',
-  imports: [NgFor],
+  imports: [SellItemComponent],
   templateUrl: './mm-body.component.html',
   styleUrl: './mm-body.component.scss',
-  providers: [TestDirService]
 })
 export class MmBodyComponent {
-
-    title = "Варіанти постільної білизни"
-    items: string[];
-
-    constructor(service: TestDirService) {
-      this.items = service.getItems();
-    }
-
-    doAfterOnClick(_$event:MouseEvent) {
-      _$event.stopPropagation;
-      console.log('button clicked', _$event);
-    }
-
+  title = 'Варіанти постільної білизни';
 }
