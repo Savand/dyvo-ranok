@@ -3,7 +3,7 @@
     <h4 class="my-0 fw-normal">Залишіть нам заявку</h4>
   </div>
   <div class="card-body">
-    <form class="row g-3" #personForm="ngForm" (ngSubmit)="onSubmit()">
+    <form class="row g-3" #personForm="ngForm">
       <div class="col-12">
         <label for="userName" class="form-label">Ваше імя</label>
         <input
@@ -29,7 +29,11 @@
         />
       </div>
       <div class="col-12">
-        <button type="submit" class="w-100 btn btn-lg btn-primary">
+        <button
+          type="submit"
+          class="w-100 btn btn-lg btn-primary"
+          (click)="onClick()"
+        >
           Надіслати
         </button>
       </div>
